@@ -435,6 +435,11 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
