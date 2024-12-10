@@ -446,6 +446,17 @@
         event.preventDefault();
       });
     </script>
+    <script>
+      document.addEventListener("keydown", (e) => {
+        if (
+          e.key === "F12" ||
+          (e.ctrlKey && e.shiftKey && e.key === "I") ||
+          (e.ctrlKey && e.key === "U")
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
