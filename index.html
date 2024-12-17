@@ -1,462 +1,599 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js ss-preload" lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="site.webmanifest" />
   </head>
-  <body onmousedown="return false" onselectstart="return false">
-    <nav id="desktop-nav">
-      <!-- <div class="logo"></div> -->
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Adnan Nizami</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/profile-pic.png"
-          alt="Adnan"
-          draggable="false"
-          style="border-radius: 50%"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Adnan Nizami</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/adnan-nizami-149a9a1ab/', '_blank')"
-            draggable="false"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/Prince453-hack', '_blank')"
-            draggable="false"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-            draggable="false"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-                draggable="false"
-              />
-              <h3>Experience</h3>
-              <p>5+ Month of Internship<br />FullStack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-                draggable="false"
-              />
-              <h3>Education</h3>
-              <p>Bachelors Degree in Computer Science and Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am an experienced freelancer specializing in Next.js,
-              TypeScript, and Node.js. Skilled in developing dynamic web
-              applications and backend solutions, focused on delivering
-              high-quality code and innovative solutions for diverse client
-              needs.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-        draggable="false"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>
-                    HTMX
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  </h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>
-                    Basic
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frameworks</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>React.Js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>Next.js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>Prisma</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                  draggable="false"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        draggable="false"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">CodeShift</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Prince453-hack/codeshift', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://codeshift-mu.vercel.app/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">NovaHorizon</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Prince453-hack/novahorizon', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://novahorizon.onrender.com/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Zenith</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Prince453-hack/zenith', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://zenith-theta.vercel.app/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        draggable="false"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-            draggable="false"
-          />
-          <p>
-            <a href="mailto:tabishnizami456@gmail.com"
-              >tabishnizami456@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/adnan-nizami-149a9a1ab/', '_blank')"
-            draggable="false"
-          />
-          <p>
-            <a
-              href="https://www.linkedin.com/in/adnan-nizami-149a9a1ab/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <p>
-        Copyright &#169; <span id="year"></span> Adnan Nizami. All Rights
-        Reserved.
-      </p>
-    </footer>
+  <body id="top" onmousedown="return false" onselectstart="return false">
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script>
-      document.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-      });
-    </script>
-    <script>
-      document.addEventListener("keydown", (e) => {
-        if (
-          e.key === "F12" ||
-          (e.ctrlKey && e.shiftKey && e.key === "I") ||
-          (e.ctrlKey && e.key === "U")
-        ) {
-          e.preventDefault();
-        }
-      });
-    </script>
-    <script src="script.js"></script>
+    <div class="s-pagewrap">
+      <div class="circles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <header class="s-header">
+        <div class="header-mobile">
+          <span class="mobile-home-link"
+            ><a href="index.html">Adnan Nizami</a></span
+          >
+          <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+        </div>
+
+        <div class="row wide main-nav-wrap">
+          <nav class="column lg-12 main-nav">
+            <ul>
+              <li><a href="index.html" class="home-link">Adnan Nizami.</a></li>
+              <li class="current">
+                <a href="#intro" class="smoothscroll">Intro</a>
+              </li>
+              <li><a href="#about" class="smoothscroll">About</a></li>
+              <li><a href="#works" class="smoothscroll">Works</a></li>
+              <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="s-content">
+        <section id="intro" class="s-intro target-section">
+          <div class="row intro-content wide">
+            <div class="column">
+              <div class="text-pretitle with-line">Hello World</div>
+
+              <h1 class="text-huge-title">
+                I am Adnan, <br />
+                a full stack developer <br />
+              </h1>
+            </div>
+
+            <ul class="intro-social">
+              <li>
+                <a href="https://github.com/Prince453-hack" target="_blank"
+                  >Github</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/adnan-nizami-149a9a1ab/"
+                  target="_blank"
+                  >Linkedin</a
+                >
+              </li>
+              <li><a href="mailto:tabishnizami456@gmail.com">Mail</a></li>
+            </ul>
+          </div>
+
+          <a href="#about" class="intro-scrolldown smoothscroll">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"
+              />
+            </svg>
+          </a>
+        </section>
+
+        <section id="about" class="s-about target-section">
+          <div class="row about-info wide" data-animate-block>
+            <div class="column lg-6 md-12 about-info__pic-block">
+              <img
+                draggable="false"
+                src="images/profile-pic.png"
+                alt=""
+                class="about-info__pic"
+                data-animate-el
+              />
+            </div>
+
+            <div class="column lg-6 md-12">
+              <div class="about-info__text">
+                <h2 class="text-pretitle with-line" data-animate-el>About</h2>
+                <p class="attention-getter" data-animate-el>
+                  I am an experienced freelancer specializing in Next.js,
+                  TypeScript, and Node.js. Skilled in developing dynamic web
+                  applications and backend solutions, focused on delivering
+                  high-quality code and innovative solutions for diverse client
+                  needs.
+                </p>
+
+                <button
+                  class="btn btn--medium u-fullwidth"
+                  onclick="window.open('./assets/Resume.pdf')"
+                >
+                  Download CV
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row about-expertise" data-animate-block>
+            <div class="column lg-12">
+              <h2 class="text-pretitle" data-animate-el>Expertise</h2>
+
+              <ul class="skills-list h1" data-animate-el>
+                <li>Web Designing</li>
+                <li>App Development</li>
+                <li>Website Development</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row about-timelines" data-animate-block>
+            <div class="column lg-6 tab-12">
+              <h2 class="text-pretitle" data-animate-el>Experience</h2>
+
+              <div class="timeline" data-animate-el>
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">Rauch International</h4>
+                    <h5 class="timeline__meta">Web Developer Intern</h5>
+                    <p class="timeline__timeframe">May 2024 - Present</p>
+                  </div>
+                  <div class="timeline__desc">
+                    <p>
+                      Developed and deployed dynamic web applications with
+                      Next.js, improving user interface and performance.
+                    </p>
+                    <p>
+                      Managed S3 buckets for secure storage, optimizing data
+                      retrieval and backup.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">Octanet</h4>
+                    <h5 class="timeline__meta">Web Developer Intern</h5>
+                    <p class="timeline__timeframe">July 2023</p>
+                  </div>
+                  <div class="timeline__desc">
+                    <p>
+                      Designed functional web interfaces with HTML, CSS, SCSS,
+                      and JavaScript for cross-browser compatibility.
+                    </p>
+                    <p>
+                      Used React.js to create interactive components, improving
+                      user engagement and performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column lg-6 tab-12">
+              <h2 class="text-pretitle" data-animate-el>Education</h2>
+
+              <div class="timeline" data-animate-el>
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">Krishna Engineering College</h4>
+                    <h5 class="timeline__meta">
+                      Bachelor Degree in Computer Science and Engineering
+                    </h5>
+                    <p class="timeline__timeframe">Nov 2021 - Present</p>
+                  </div>
+                </div>
+
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">
+                      Guru Nanak Dev Institute Of Technology
+                    </h4>
+                    <h5 class="timeline__meta">
+                      Computer Science and Engineering
+                    </h5>
+                    <p class="timeline__timeframe">2017-2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="works" class="s-works target-section">
+          <div class="row works-portfolio">
+            <div class="column lg-12" data-animate-block>
+              <h2 class="text-pretitle" data-animate-el>My Recent Works</h2>
+              <p class="h1" data-animate-el>
+                Here are some of my recent favorite projects. Feel free to take
+                a look!
+              </p>
+
+              <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+                <li class="folio-list__item column" data-animate-el>
+                  <a class="folio-list__item-link" href="#modal-01">
+                    <div class="folio-list__item-pic">
+                      <img
+                        draggable="false"
+                        src="images/portfolio/flowz.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="folio-list__item-text">
+                      <div class="folio-list__item-cat">Website</div>
+                      <div class="folio-list__item-title">Flowz.</div>
+                    </div>
+                  </a>
+                  <a
+                    class="folio-list__proj-link"
+                    href="https://flowz-one.vercel.app/"
+                    title="project link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="folio-list__item column" data-animate-el>
+                  <a class="folio-list__item-link" href="#modal-02">
+                    <div class="folio-list__item-pic">
+                      <img
+                        draggable="false"
+                        src="images/portfolio/finfolio.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="folio-list__item-text">
+                      <div class="folio-list__item-cat">Website</div>
+                      <div class="folio-list__item-title">FinFolio.</div>
+                    </div>
+                  </a>
+                  <a
+                    class="folio-list__proj-link"
+                    href="https://finfolio-eight.vercel.app/"
+                    title="project link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="folio-list__item column" data-animate-el>
+                  <a class="folio-list__item-link" href="#modal-03">
+                    <div class="folio-list__item-pic">
+                      <img
+                        draggable="false"
+                        src="images/portfolio/codeshift.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="folio-list__item-text">
+                      <div class="folio-list__item-cat">Website</div>
+                      <div class="folio-list__item-title">CodeShift.</div>
+                    </div>
+                  </a>
+                  <a
+                    class="folio-list__proj-link"
+                    href="https://codeshift-mu.vercel.app/"
+                    title="project link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <!--end folio-list__item -->
+
+                <li class="folio-list__item column" data-animate-el>
+                  <a class="folio-list__item-link" href="#modal-04">
+                    <div class="folio-list__item-pic">
+                      <img
+                        draggable="false"
+                        src="images/portfolio/zenith.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="folio-list__item-text">
+                      <div class="folio-list__item-cat">Website</div>
+                      <div class="folio-list__item-title">Zenith.</div>
+                    </div>
+                  </a>
+                  <a
+                    class="folio-list__proj-link"
+                    href="https://zenith-theta.vercel.app/"
+                    title="project link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="modal-01" hidden>
+              <div class="modal-popup">
+                <img
+                  draggable="false"
+                  src="images/portfolio/flowz1.jpg"
+                  alt=""
+                />
+
+                <div class="modal-popup__desc">
+                  <h5>Flowz</h5>
+                  <p>
+                    A task management platform built with Next.js, Tailwind CSS,
+                    Hono.js, and Drizzle. It features Kanban boards, a calendar,
+                    and table views to streamline project organization and
+                    enhance team productivity.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Management</li>
+                    <li>Task</li>
+                    <li>Kanban</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="https://flowz-one.vercel.app/"
+                  class="modal-popup__details"
+                  target="_blank"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-02" hidden>
+              <div class="modal-popup">
+                <img
+                  draggable="false"
+                  src="images/portfolio/finfolio1.jpg"
+                  alt=""
+                />
+
+                <div class="modal-popup__desc">
+                  <h5>FinFolio</h5>
+                  <p>
+                    A comprehensive wealth management platform designed for
+                    investment advisors and professional wealth managers. It
+                    offers a suite of tools including portfolio management,
+                    performance reporting, client portals, rebalancing, trading,
+                    billing, and a light CRM.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Transaction</li>
+                    <li>Finance</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="https://finfolio-eight.vercel.app/"
+                  class="modal-popup__details"
+                  target="_blank"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-03" hidden>
+              <div class="modal-popup">
+                <img
+                  draggable="false"
+                  src="images/portfolio/codeshift1.jpg"
+                  alt=""
+                />
+
+                <div class="modal-popup__desc">
+                  <h5>CodeShift</h5>
+                  <p>
+                    A platform where users can post programming-related
+                    questions and receive answers from other users, fostering a
+                    collaborative learning environment.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Coding</li>
+                    <li>Programming</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="https://codeshift-mu.vercel.app/"
+                  class="modal-popup__details"
+                  target="_blank"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-04" hidden>
+              <div class="modal-popup">
+                <img
+                  draggable="false"
+                  src="images/portfolio/zenith1.jpg"
+                  alt=""
+                />
+
+                <div class="modal-popup__desc">
+                  <h5>Zenith</h5>
+                  <p>
+                    Real-time collaboration features, allowing multiple users to
+                    join projects simultaneously and work together on UI designs
+                    in a collaborative environment.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Whiteboard</li>
+                    <li>Collaboration</li>
+                    <li>Design</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="https://zenith-theta.vercel.app/"
+                  class="modal-popup__details"
+                  target="_blank"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+          </div>
+        </section>
+
+        <section id="contact" class="s-contact target-section">
+          <div class="row contact-top">
+            <div class="column lg-12">
+              <h2 class="text-pretitle">Get In Touch</h2>
+
+              <p class="h1">
+                I'm here to discuss design, tech, and art—message me!
+              </p>
+            </div>
+          </div>
+          <!-- end contact-top -->
+
+          <div class="row contact-bottom">
+            <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+              <h3 class="text-pretitle">Social</h3>
+              <ul class="contact-social">
+                <li>
+                  <a href="https://github.com/Prince453-hack" target="_blank"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/adnan-nizami-149a9a1ab/"
+                    target="_blank"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="column lg-4 md-12 contact-block">
+              <a
+                href="mailto:tabishnizami456@gmail.com"
+                class="mailtoui btn btn--medium u-fullwidth contact-btn"
+                >Reach Me.</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="s-footer">
+        <div class="row">
+          <div class="column ss-copyright">
+            <span>&copy; Copyright Random <span id="year"></span></span>
+          </div>
+
+          <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+      <script>
+        document.addEventListener("contextmenu", function (event) {
+          event.preventDefault();
+        });
+      </script>
+      <script>
+        document.addEventListener("keydown", (e) => {
+          if (
+            e.key === "F12" ||
+            (e.ctrlKey && e.shiftKey && e.key === "I") ||
+            (e.ctrlKey && e.key === "U")
+          ) {
+            e.preventDefault();
+          }
+        });
+      </script>
+    </div>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
