@@ -4132,6 +4132,13 @@ img.u-pull-left {
   fill: white;
 }
 
+.s-footer1 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: small;
+  color: #434445;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * footer
